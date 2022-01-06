@@ -1,21 +1,6 @@
-2022-01-05 15:21:06,794 - DEBUG - __main__ - Getting movie from database by get_movies method..
-2022-01-05 15:22:20,432 - DEBUG - __main__ - Adding movies to the database...
-2022-01-05 15:24:27,553 - DEBUG - __main__ - Adding movies to the database...
-2022-01-05 15:24:51,606 - DEBUG - __main__ - Getting movie from database by get_movies method..
-2022-01-05 15:25:38,176 - DEBUG - __main__ - Updating movies to the database...
-2022-01-05 15:25:54,840 - DEBUG - __main__ - Getting movie from database by get_movies_by_id method..
-2022-01-05 17:27:32,826 - DEBUG - __main__ - Getting movie from database by get_movies method..
-2022-01-05 17:29:09,371 - DEBUG - __main__ - Getting movie from database by get_movies method..
-2022-01-05 17:36:44,448 - DEBUG - __main__ - Getting movie from database by get_movies method..
-2022-01-05 17:50:11,283 - DEBUG - __main__ - Getting movie from database by get_movies method..
-2022-01-05 17:53:22,350 - DEBUG - __main__ - Getting movie from database by get_movies method..
-2022-01-05 17:54:07,371 - DEBUG - __main__ - Adding movies to the database...
-2022-01-05 17:54:25,712 - DEBUG - __main__ - Getting movie from database by get_movies method..
-2022-01-05 17:57:14,625 - DEBUG - __main__ - Adding movies to the database...
-2022-01-05 17:57:31,398 - DEBUG - __main__ - Getting movie from database by get_movies method..
-2022-01-05 19:05:43,316 - DEBUG - __main__ - Adding movies to the database...
-2022-01-05 19:09:43,053 - DEBUG - __main__ - Adding movies to the database...
-2022-01-05 19:53:43,796 - DEBUG - __main__ - Getting movie from database by get_movies method..
-2022-01-05 20:06:10,236 - DEBUG - __main__ - Getting movie from database by get_movies method..
-2022-01-05 20:07:53,264 - DEBUG - __main__ - Getting movie from database by get_movies method..
-2022-01-05 20:09:15,178 - DEBUG - __main__ - Getting movie from database by get_movies method..
+2022-01-06 12:48:00,597 - DEBUG - app - Getting movie from database by get_movies method..
+2022-01-06 12:48:15,585 - DEBUG - app - Adding movies to the database...
+2022-01-06 14:59:27,913 - DEBUG - app - Getting movie from database by get_movies method..
+2022-01-06 14:59:48,694 - DEBUG - app - Getting movie from database by get_movies_by_id method..
+2022-01-06 17:39:35,356 - DEBUG - app - Getting movie from database by get_movies method..
+2022-01-06 21:04:23,943 - DEBUG - app - Getting movie from database by get_movies method..

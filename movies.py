@@ -1,15 +1,20 @@
 from settings import *
+from loggerfile import LoggerFile
 import json
 import logging
 
-logger = logging.getLogger(__name__)
-logger.setLevel(logging.DEBUG)
+#creates Logger instance
+LoggerFile.set_logger('movies','movie.log',logging.DEBUG)
+logger = logging.getLogger('movies')
 
-f = logging.Formatter("%(asctime)s - %(levelname)s - %(name)s - %(message)s")
-fh = logging.FileHandler("movies.log")
-fh.setFormatter(f)
-
-logger.addHandler(fh)
+# logger = logging.getLogger(__name__)
+# logger.setLevel(logging.DEBUG)
+#
+# f = logging.Formatter("%(asctime)s - %(levelname)s - %(name)s - %(message)s")
+# fh = logging.FileHandler("movies.log")
+# fh.setFormatter(f)
+#
+# logger.addHandler(fh)
 
 #Initializing our database
 db = SQLAlchemy(app)

@@ -1,26 +1,31 @@
 from movies import *
+from userschema import UserSchema
+from loggerfile import LoggerFile
 import logging
 from functools import wraps
 from marshmallow import Schema, fields, ValidationError
 
-
 #creates Logger instance
-logger = logging.getLogger(__name__)
-logger.setLevel(logging.DEBUG)
-f = logging.Formatter("%(asctime)s - %(levelname)s - %(name)s - %(message)s")
-fh = logging.FileHandler("app.log")
-fh.setFormatter(f)
-logger.addHandler(fh)
+LoggerFile.set_logger('app','app.log',logging.DEBUG)
+logger = logging.getLogger('app')
+
+# #creates Logger instance
+# logger = logging.getLogger(__name__)
+# logger.setLevel(logging.DEBUG)
+# f = logging.Formatter("%(asctime)s - %(levelname)s - %(name)s - %(message)s")
+# fh = logging.FileHandler("app.log")
+# fh.setFormatter(f)
+# logger.addHandler(fh)
 
 
-class UserSchema(Schema):
-    title = fields.String(required=True)
-    year = fields.Integer(required=True)
-    genre = fields.String(required=True)
+# class UserSchema(Schema):
+#     title = fields.String(required=True)
+#     year = fields.Integer(required=True)
+#     genre = fields.String(required=True)
 
 def required_params(schema):
     def decorator(fn):
-
+        # print("I m here")
         @wraps(fn)
         def wrapper(*args, **kwargs):
             try:
@@ -36,6 +41,10 @@ def required_params(schema):
         return wrapper
 
     return decorator
+
+# @app.route('/')
+# def hello():
+#     return "welcome to the flask tutorials"
 
 # route to get all Movies
 @app.route("/movies", methods=["GET"])
@@ -83,6 +92,6 @@ def delete_movie(id):
     return responce
 
 if __name__=="__main__":
-    app.run(port=5000, debug=True)
-
+    # app.run(port=5000, debug=True)
+    app.run(host="0.0.0.0", port=5000)
 
